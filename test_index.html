@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page - El Cartel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .status {
+            background-color: #e8f5e8;
+            border: 1px solid #4caf50;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .info {
+            background-color: #e3f2fd;
+            border: 1px solid #2196f3;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 El Cartel - Test Page</h1>
+        
+        <div class="status">
+            <h3>✅ Hosting Status: Working!</h3>
+            <p>If you can see this page, your domain and hosting are properly configured.</p>
+        </div>
+        
+        <div class="info">
+            <h3>📋 Next Steps:</h3>
+            <ol>
+                <li>Upload your Flutter web build files</li>
+                <li>Replace this test page with your Flutter app</li>
+                <li>Configure SSL certificate</li>
+                <li>Test your Flutter application</li>
+            </ol>
+        </div>
+        
+        <div class="info">
+            <h3>🔧 Flutter Deployment Commands:</h3>
+            <pre style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
+# Build Flutter web app
+flutter build web
+
+# Upload contents of build/web/ to your domain folder
+# Make sure index.html is in the root directory
+            </pre>
+        </div>
+        
+        <p><strong>Current Time:</strong> <span id="currentTime"></span></p>
+    </div>
+    
+    <script>
+        document.getElementById('currentTime').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
